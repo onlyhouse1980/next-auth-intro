@@ -1,6 +1,5 @@
+"use client"
 
-
-'use client'
 import Image from 'next/image'
 import Head from 'next/head';
 import styles from './styles.module.css'
@@ -30,7 +29,7 @@ export default function index(){
     
     </div>
   <div>
-    <motion.div className={styles.bgWrap} exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
+    <motion.div exit={{ opacity: 0 }} initial={{opacity: 0 }} animate={{opacity: 1 }}>
     
     <motion.div animate={{
         opacity: [1, 0, 0, 0, 1],        
@@ -47,9 +46,8 @@ export default function index(){
         className={styles.Psound}
         alt="Whale Sighting"
         src="/Images/WebPFiles/psound.webp"
-        width={1200}
-        height={920}
-        
+        layout="fill"
+        objectFit="cover"
         quality={85}
       />
     </motion.div>
@@ -65,10 +63,9 @@ export default function index(){
       className={styles.bgWrap}>
       <Image
         alt="Sunrise"
-        className={styles.Psound}
         src="/Images/WebPFiles/sunrise.webp"
-        width={1200}
-        height={920}
+        layout="fill"
+        objectFit="cover"
         quality={50}
       />
     </motion.div>
@@ -86,8 +83,8 @@ export default function index(){
         className={styles.Psound}
         alt="Droplets"
         src="/Images/WebPFiles/boat.webp"
-        width={1200}
-        height={920}
+        layout="fill"
+        objectFit="cover"
         quality={85}
       />
     </motion.div>
@@ -104,8 +101,8 @@ export default function index(){
       <Image
         alt="Droplets"
         src="/Images/WebPFiles/whale.webp"
-        
-        
+        layout="fill"
+        objectFit="cover"
         quality={85}
       />
     </motion.div> */}
@@ -121,15 +118,15 @@ export default function index(){
       className={styles.bgWrap}>
       <Image
         alt="Orchard Beach"
-        className={styles.Psound}
         src="/Images/WebPFiles/hero-bg.webp"
-        width={1200}
-        height={920}
+        layout="fill"
+        objectFit="cover"
         quality={85}
       />
     </motion.div>
     <motion.div animate={{
-        opacity: [0, 0, 0, 0, 1],}}
+        opacity: [0, 0, 0, 0, 1],        
+      }}
       transition={{
         duration: 30,
         ease: "easeInOut",
@@ -140,10 +137,9 @@ export default function index(){
       <Image
         alt="Water Droplets"
         src="/Images/WebPFiles/glass_droplets.webp"
-        className={styles.Psound}
         /*filter="blur"*/
-        width={1200}
-        height={920}
+        layout="fill"
+        objectFit="cover"
         quality={85}
       />
     </motion.div>

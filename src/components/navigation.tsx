@@ -13,7 +13,7 @@ export default function NavbarWithDropdown() {
       
         <Navbar.Brand href="/">
             <Image src="/Images/WebPFiles/obcglogo.webp" width={70} height={70} alt="obcg logo"></Image>
-            <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-black">Orchard Beach</span>
+            <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Orchard Beach</span>
         </Navbar.Brand>
       
       
@@ -55,9 +55,10 @@ export default function NavbarWithDropdown() {
 {/* ****DOCUMENTS DROPDOWN**** */}
         
         <Dropdown
+          className={styles.dropDown}
           arrowIcon={true}
           inline
-          label={'Documents'}>
+          label={'DOCUMENTS'}>
             <p className={styles.dropDown}></p>
             <Dropdown.Item><Link href="#">Water Use Efficiency</Link></Dropdown.Item>
             <Dropdown.Item><Link href="#">Water System Plan</Link></Dropdown.Item>
@@ -73,6 +74,7 @@ export default function NavbarWithDropdown() {
 {/* ****CONSUMER CONFIDENCE DROPDOWN**** */}
         
         <Dropdown
+          className={styles.dropDown}
           arrowIcon={true}
           inline
           label={'CONSUMER CONFIDENCE'}>
@@ -87,6 +89,7 @@ export default function NavbarWithDropdown() {
 {/* ****MINUTES DROPDOWN**** */}
         
         <Dropdown
+          className={styles.dropDown}
           arrowIcon={true}
           inline
           label={'MINUTES'}>
@@ -109,6 +112,7 @@ export default function NavbarWithDropdown() {
 {/* ****COMMUNITY DROPDOWN**** */}
         
         <Dropdown
+          className={styles.dropDown}
           arrowIcon={true}
           inline
           label={'COMMUNITY'}
@@ -120,10 +124,10 @@ export default function NavbarWithDropdown() {
         </Dropdown>
 
         
-        <Navbar.Link href="/server">Server</Navbar.Link>
-        <Navbar.Link href="/client">Client</Navbar.Link>
-        <Navbar.Link href="/extra">Extra</Navbar.Link>
-        <Navbar.Link href="#">Contact</Navbar.Link>
+        <Navbar.Link href="/server">SERVER</Navbar.Link>
+        <Navbar.Link href="/client">CLIENT</Navbar.Link>
+        <Navbar.Link href="/extra">EXTRA</Navbar.Link>
+        <Navbar.Link href="#">CONTACT</Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
   )
