@@ -1,14 +1,14 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
-import Navbar from './components/navigation'
+import Navbar from '../components/navigation'
 import AuthProvider from './context/AuthProvider'
-import Footer from '../app/components/Footer'
+import Footer from '../components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'NextAuth Tutorial',
-  description: 'Learn NextAuth.js by Dave Gray',
+  title: 'Orchard Beach Community Group',
+  description: '',
 }
 
 export default function RootLayout({

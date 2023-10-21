@@ -7,9 +7,7 @@ import Image from "next/image"
 export default function Navbar() {
     return (
         <nav className="bg-blue-800 z-50 mdp-4">
-            <Link href="/"> 
             <Image src="/Images/WebPFiles/obcglogo.webp" width={60} height={60} alt="obcg logo"></Image>
-            </Link>
             <ul className="flex justify-evenly text-2xl font-bold">
                 
             

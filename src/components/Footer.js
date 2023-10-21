@@ -6,7 +6,7 @@ const FooterPage = () => {
   return (
       <div className={styles.footer}>
         &copy; {new Date().getFullYear()} Powered By:
-        <a href='http://anewshade.de'>
+        <a href='http://portfolio.ryanernstnyberg.com' target='_blank' >
         <Image src="/Images/anewshade.webp" alt="aNewShade Logo" height="30" width="40" className={styles.footerLogo} /></a>
       </div>
   );
