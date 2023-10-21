@@ -1,2 +1,9 @@
 node_modules
 .next
+src/app/.DS_Store
+src/app/.DS_Store
+src/.DS_Store
+
+.yarn
+.pnp*
+.next*
