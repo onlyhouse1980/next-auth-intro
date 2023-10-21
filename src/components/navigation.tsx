@@ -127,7 +127,7 @@ export default function NavbarWithDropdown() {
         <Navbar.Link href="/server">SERVER</Navbar.Link>
         <Navbar.Link href="/client">CLIENT</Navbar.Link>
         <Navbar.Link href="/extra">EXTRA</Navbar.Link>
-        <Navbar.Link href="#">CONTACT</Navbar.Link>
+        <Navbar.Link href="/contact">CONTACT</Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
   )
